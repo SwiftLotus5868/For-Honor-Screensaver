@@ -10,7 +10,7 @@ x += xSpeed;
     xSpeed = -xSpeed;
     audio2.play();
     rndC(container);
-
+    rndCB(container);
 
   }
 
@@ -22,7 +22,7 @@ x += xSpeed;
     ySpeed = -ySpeed;
     audio.play();
     rndC(container);
-
+    rndCB(container);
   }
 
 img.style.left = x +'px';
@@ -39,7 +39,14 @@ function rndC(element)
   element.style.setProperty('background-color', `rgb(${r},${g},${b})`);
 }
 
+function rndCB(element)
+{
+  r = Math.floor(Math.random() * 255);
+  g = Math.floor(Math.random() * 255);
+  b = Math.floor(Math.random() * 255);
 
+  element.style.setProperty('border-color', `rgb(${r},${g},${b})`);
+}
 function setXSpeed(newValue)
 {
   xSpeed = Math.abs(xSpeed) / xSpeed * newValue;

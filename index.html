@@ -11,13 +11,23 @@
 </head>
 
 <body>
+  <style>
+    body {
+       color: white;
+       font-family: 'Times New Roman', Times, serif;
+       font-weight: bold;
+    }
+  </style>
   <div id="container">
-    <div id="bgimage"></div>
-    <img id="image" src="FHlogo.png">
-    <div id="menuGrid">
-      <img id="muteButton" src="speaker.png" width="50px" onclick="mutePressed();">
+    <div id="bgimage">
+      <div id="menuGrid">
+        <img id="muteButton" src="speaker.png" width="50px" onclick="mutePressed();">
 
+      </div>
+      
     </div>
+    <img id="image" src="FHlogo.png">
+
   </div>
 
   <script src="script.js"></script>
@@ -34,7 +44,7 @@
 
     var intervalId = setInterval(moveImage, 0);
   </script>
-
+Best on a PC. Rotate Sideways on Mobile.
 </body>
 
 </html>
